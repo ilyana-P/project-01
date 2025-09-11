@@ -23,7 +23,7 @@ export default function Counter() {
   //   СОЗДАЙТЕ КНОПКУ -2
 
   return (
-    <div>
+    <div className="">
       <h2>{counter}</h2>
 
       <button type="button" onClick={handleAddOne}>

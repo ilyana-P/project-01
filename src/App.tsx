@@ -3,12 +3,13 @@ import Counter from "./components/Counter/Counter";
 import DogCard from "./components/DogCard/DogCard";
 import Goodbye from "./components/Goodbye/Goodbye";
 import Greeting from "./components/Greeting/Greeting";
+import PersonalGreeting from "./components/PersonalGreeting/PersonalGreeting";
 import ProfileCard from "./components/ProfileCard/ProfileCard";
 
 function App() {
   return (
     <>
-      <p> Hello,React!</p>
+      <PersonalGreeting/>
       <Greeting />
       <Counter />
       <Goodbye name={"Bob"} />

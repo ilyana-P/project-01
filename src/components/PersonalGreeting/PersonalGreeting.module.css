@@ -1,0 +1,7 @@
+.container {
+  border: 2px solid lightcoral;
+  border-radius: 16px;
+  padding: 24px;
+  width: 600 px;
+}
+/* используйте только классы и составные селекторыс классами*/
