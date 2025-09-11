@@ -5,6 +5,7 @@ import Goodbye from "./components/Goodbye/Goodbye";
 import Greeting from "./components/Greeting/Greeting";
 import PersonalGreeting from "./components/PersonalGreeting/PersonalGreeting";
 import ProfileCard from "./components/ProfileCard/ProfileCard";
+import SpaceMissionsForm from "./components/SpaceMissionsForm/SpaceMissionsForm";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         name="Captain Jack Sparrow"
         description="Pirate Lord of the Caribbean sea"
       />
+      <SpaceMissionsForm/>
     
     </>
   );
