@@ -1,18 +1,21 @@
 import React, { useState } from "react";
+import s from "./SpaceMissionsForm.module.css";
 
 export default function SpaceMissionsForm() {
   const [astronautName, setAstronautName] = useState("John Doe");
-  const [planet, setPlanet] = useState("planet");
+  const [planet, setPlanet] = useState("Mars");
   return (
-    <div>
-      <h2>Space Mission Form</h2>
+    <div className={s.container}>
+      <h2 className={s.title}>Space Mission Form</h2>
       <input
+      className={s.input}
         type="text"
         placeholder="Enter astronaut name"
         value={astronautName}
         onChange={(event) => setAstronautName(event.target.value)}
       />
       <select
+      className={s.select}
         value={planet}
         onChange={(event) => setPlanet(event.target.value)}
       >
@@ -23,7 +26,7 @@ export default function SpaceMissionsForm() {
       </select>
 
       {astronautName ? (
-        <p>
+        <p className={s.message}>
           Astronaut {astronautName} is headed to {planet}!
         </p>
       ) : (
